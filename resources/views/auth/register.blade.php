@@ -68,7 +68,7 @@
                        required>
               </div>
 
-              <button type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">
+              <button type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg px-4 py-3 mt-6 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
                 S'inscrire
               </button>
             </form>
@@ -87,11 +87,11 @@
 <div class="modal fade" id="registerSuccessModal" tabindex="-1" aria-labelledby="registerSuccessModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="registerSuccessModalLabel">Félicitations !</h5>
+            <div class="modal-header bg-success-subtle">
+                <h5 class="modal-title " id="registerSuccessModalLabel">Félicitations !</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body bg-danger">
                 Vous êtes inscrit avec succès. Redirection vers le tableau de bord...
             </div>
         </div>

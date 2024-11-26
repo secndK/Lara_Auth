@@ -10,28 +10,139 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div class="container mx-auto p-8">
-        <h1 class="text-3xl font-bold mb-4">Bienvenue, {{ Auth::user()->name }} !</h1>
-        <p class="text-lg">Vous êtes connecté au tableau de bord.</p>
 
-        <form action="{{ route('logout') }}" method="POST" class="mt-4">
-            @csrf
-            <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded-lg">
-                Déconnexion
-            </button>
-        </form>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Modal pour connexion réussie -->
     @if(session('login_success'))
     <div class="modal fade" id="loginSuccessModal" tabindex="-1" aria-labelledby="loginSuccessModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginSuccessModalLabel">Connexion réussie</h5>
+                <div class="modal-header bg-success-subtle">
+                    <h5 class="modal-title " id="loginSuccessModalLabel">Connexion réussie</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body ">
                     Vous êtes connecté avec succès !
                 </div>
             </div>

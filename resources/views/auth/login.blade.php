@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    @vite('resources/css/app.css') <!-- Assurez-vous que Vite est configuré -->
+    @vite('resources/css/app.css')
+    <!-- Assurez-vous que Vite est configuré -->
 </head>
 <body>
     <section class="flex flex-col md:flex-row h-screen items-center">
@@ -46,7 +47,7 @@
                 @enderror
               </div>
 
-              <button type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">
+              <button type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg px-4 py-3 mt-6 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
                 Se connecter
               </button>
             </form>
@@ -61,19 +62,24 @@
       </section>
 
       <!-- Modal pour connexion réussie -->
-<div class="modal fade" id="loginSuccessModal" tabindex="-1" aria-labelledby="loginSuccessModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="loginSuccessModalLabel">Connexion réussie</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Vous êtes connecté avec succès. Redirection vers le tableau de bord...
+      <div class="modal fade" id="loginSuccessModal" tabindex="-1" aria-labelledby="loginSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content  text-white">
+                <div class="modal-header bg-success-subtle ">
+                    <h5 class="modal-title" id="loginSuccessModalLabel">Connexion réussie</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Vous êtes connecté avec succès. Redirection vers le tableau de bord...
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+
+
+
+
 
 </body>
 </html>
