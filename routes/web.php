@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
@@ -26,6 +27,8 @@ Route::post('/logout', function () {
     Auth::logout();
     return redirect('/login'); // Redirigez vers la page de connexion après déconnexion
 })->name('logout');
+
+
 
 
 

@@ -43,6 +43,7 @@ class AuthController extends Controller
 
 
         Auth::login($user);
+        session()->flash('register_success', true);
         return redirect()->route('dashboard');
     }
 
@@ -87,6 +88,7 @@ class AuthController extends Controller
 
     // Tentative d'authentification
     if (Auth::attempt($request->only('email', 'password'))) {
+        session()->flash('login_success', true);
         return redirect()->route('dashboard');
     }
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     @vite('resources/css/app.css') <!-- Assurez-vous que Vite est configuré -->
 </head>
 <body>
@@ -80,5 +81,22 @@
           </div>
         </div>
       </section>
+
+
+      <!-- Modal pour inscription réussie -->
+<div class="modal fade" id="registerSuccessModal" tabindex="-1" aria-labelledby="registerSuccessModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerSuccessModalLabel">Félicitations !</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Vous êtes inscrit avec succès. Redirection vers le tableau de bord...
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
